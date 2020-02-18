@@ -6,8 +6,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
-  grid-template-areas: "hd hd ";
+  grid-template-areas:
+  "hd hd hd"
+  "main main main"
+  "ft ft ft";
 }
+
 #header {
   display: grid;
   
