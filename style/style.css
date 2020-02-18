@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+#header {
+  display: grid;
+  grid-area: 1 / 1 / 4 / 2;
+}
