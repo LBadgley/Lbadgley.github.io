@@ -1,18 +1,38 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-#wrapper {
+.wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
   grid-template-areas:
-  "hd hd hd"
-  "main main main"
-  "ft ft ft";
+  "hd hd"
+  "main main main main"
+  "ft ft";
 }
 
-#header {
-  display: grid;
+.header {
+  border: 1px solid black;
+  grid-area: hd;
   
+}
+
+.aboutMe {
+  border: 1px solid red;
+  grid-area: main;
+
+}
+.experience {
+  border: 1px solid purple;
+  grid-area: main;
+}
+.projects {
+  border: 1px solid pink;
+  grid-area: main;
+}
+.footer {
+  border: 1px solid blue;
+  grid-area: ft;
 }
